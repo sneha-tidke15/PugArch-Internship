@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: #222;
+    padding: 20px;
+  }
+  
+  .card {
+    width: 100%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #fff;
+    margin: 60px auto;
+    border-radius: 20px;
+    padding: 30px 25px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .search {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+  }
+  
+  .search input {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 12px 20px;
+    height: 50px;
+    border-radius: 30px;
+    flex: 1 1 200px;
+    font-size: 16px;
+  }
+  
+  .search button {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease;
+  }
+  
+  .search button:hover {
+    background: #d0f0ec;
+  }
+  
+  .search button img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .weather {
+    display: none;
+    margin-top: 30px;
+  }
+  
+  .weather-icon {
+    width: 120px;
+    margin-bottom: 20px;
+  }
+  
+  .weather h1 {
+    font-size: 60px;
+    font-weight: 500;
+  }
+  
+  .weather h2 {
+    font-size: 32px;
+    font-weight: 400;
+    margin-top: -10px;
+  }
+  
+  .details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 40px;
+    gap: 20px;
+  }
+  
+  .col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    flex: 1 1 120px;
+  }
+  
+  .col img {
+    width: 32px;
+    margin-right: 10px;
+  }
+  
+  .humidity, .wind {
+    font-size: 22px;
+    margin-top: -6px;
+  }
+  
+  /* Responsive tweaks */
+  @media (max-width: 480px) {
+    .card {
+      padding: 20px 15px;
+      margin: 40px auto;
+    }
+  
+    .weather h1 {
+      font-size: 48px;
+    }
+  
+    .weather h2 {
+      font-size: 28px;
+    }
+  
+    .search input {
+      font-size: 14px;
+      height: 45px;
+    }
+  
+    .search button {
+      width: 45px;
+      height: 45px;
+    }
+  
+    .weather-icon {
+      width: 100px;
+    }
+  
+    .humidity, .wind {
+      font-size: 18px;
+    }
+  }
+  
