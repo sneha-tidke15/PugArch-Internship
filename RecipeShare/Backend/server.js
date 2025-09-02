@@ -17,3 +17,9 @@ app.use("/recipe",require("./routes/recipe"))
 app.listen(PORT,(err)=>{
     console.log(`app is listening on port ${PORT}`)
 })
+
+app.get("/recipes", (req, res) => {
+  res.json([{ id: 1, name: "Pav Bhaji" }, { id: 2, name: "Biryani" }])
+})
+
+module.exports = app
